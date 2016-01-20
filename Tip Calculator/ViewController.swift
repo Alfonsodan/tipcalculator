@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var tipText: UITextField!
     @IBOutlet var totalText: UILabel!
     
+    // button action starts here
     @IBAction func calcButton(sender: AnyObject) {
         let bill = Int(billText.text!)
         let tip = Int(tipText.text!)
