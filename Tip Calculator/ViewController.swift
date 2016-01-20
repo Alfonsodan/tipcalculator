@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     @IBOutlet var totalText: UILabel!
     
     @IBAction func calcButton(sender: AnyObject) {
-        var bill = Int(billText.text!)
-        var tip = Int(tipText.text!)
-        var total = (tip! * bill!) / 100
+        let bill = Int(billText.text!)
+        let tip = Int(tipText.text!)
+        let total = (tip! * bill!) / 100
         totalText.text = "Your tip should be $\(total)"
     }
     
